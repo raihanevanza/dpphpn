@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url(../fonts/Poppins-Regular.ttf) format("truetype"); }
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url(../fonts/Poppins-Bold.ttf) format("truetype"); }
+@font-face {
+  font-family: "Poppins-Extra-Bold";
+  src: url(../fonts/Poppins-ExtraBold.ttf) format("truetype"); }
+@font-face {
+  font-family: "Poppins-Light";
+  src: url(../fonts/Poppins-Light.ttf) format("truetype"); }
+#home-page .accent-1 {
+  position: absolute;
+  height: 600px;
+  right: -310px;
+  top: 100px;
+  opacity: 0.1; }
+#home-page .title-header {
+  font-size: 52px;
+  font-family: "Poppins-Bold";
+  line-height: 70px;
+  color: #116d38;
+  width: 80%; }
+#home-page .gallery-header {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin-top: 25px; }
+  #home-page .gallery-header .image-wrapper {
+    width: calc(20% - 10px);
+    padding-right: 10px;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    flex-direction: column; }
+    #home-page .gallery-header .image-wrapper .image {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 16px; }
+      #home-page .gallery-header .image-wrapper .image img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all .32s;
+        object-fit: cover;
+        vertical-align: middle; }
+        #home-page .gallery-header .image-wrapper .image img:hover {
+          transform: scale(1.2); }
+      #home-page .gallery-header .image-wrapper .image.img-1 {
+        height: 280px; }
+      #home-page .gallery-header .image-wrapper .image.img-2 {
+        height: 150px; }
+      #home-page .gallery-header .image-wrapper .image.img-3 {
+        margin-top: 20px;
+        height: 300px; }
+      #home-page .gallery-header .image-wrapper .image.img-4 {
+        height: 470px; }
+      #home-page .gallery-header .image-wrapper .image.img-5 {
+        height: 300px; }
+      #home-page .gallery-header .image-wrapper .image.img-6 {
+        margin-top: 20px;
+        height: 150px; }
+      #home-page .gallery-header .image-wrapper .image.img-7 {
+        height: 280px; }
+
+#footer .logo-footer {
+  height: 100px; }
+
+/*# sourceMappingURL=main-v2.css.map */
