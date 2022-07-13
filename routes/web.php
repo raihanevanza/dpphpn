@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\NewsController;
+use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +19,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/home', [PageController::class, 'home']);
+
+// ===================== Administrator ===================== //
+Route::get('/login', [PageController::class, 'login']);
+Route::post('/login', [PageController::class, 'authenticate']);
+Route::get('/logout', [PageController::class, 'logout']);
+
+Route::middleware('administrator')->group(function () {
+    Route::get('/dashboard', [DashboardController::class, 'index']);
+    Route::resource('/master-news', NewsController::class);
+});
+// ===================== Administrator ===================== //
