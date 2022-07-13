@@ -10,6 +10,22 @@
 @font-face {
   font-family: "Poppins-Light";
   src: url(../fonts/Poppins-Light.ttf) format("truetype"); }
+.section-title {
+  width: 100%;
+  position: relative;
+  margin-bottom: 50px; }
+  .section-title .title {
+    font-size: 32px;
+    font-family: "Poppins-Bold";
+    color: #000;
+    position: relative;
+    text-align: center; }
+  .section-title .subtitle {
+    font-size: 16px;
+    font-family: "Poppins-Light";
+    color: #000;
+    text-align: center; }
+
 #home-page .accent-1 {
   position: absolute;
   height: 600px;
@@ -67,6 +83,27 @@
         height: 150px; }
       #home-page .gallery-header .image-wrapper .image.img-7 {
         height: 280px; }
+
+#main-wrapper {
+  margin-top: 150px; }
+
+#news-page .tab {
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #000;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins-Regular";
+  cursor: pointer; }
+  #news-page .tab.active {
+    background-color: #116d38;
+    color: #fff;
+    box-shadow: none; }
+#news-page .news-content {
+  margin-top: 50px; }
 
 #footer .logo-footer {
   height: 100px; }

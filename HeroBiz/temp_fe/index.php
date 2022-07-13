@@ -103,9 +103,9 @@
 
       <div class="container" data-aos="fade-up">
 
-        <div class="section-header">
-          <h2>Berita</h2>
-          <p>Berita Terbaru</p>
+        <div class="section-title">
+          <div class="title">Berita Terbaru</div>
+          <div class="subtitle">Lorem ipsum dolor sit amet</div>
         </div>
 
         <div class="row">
@@ -159,9 +159,9 @@
     <section id="contact" class="contact">
       <div class="container">
 
-        <div class="section-header">
-          <h2>Contact Us</h2>
-          <p>Ea vitae aspernatur deserunt voluptatem impedit deserunt magnam occaecati dssumenda quas ut ad dolores adipisci aliquam.</p>
+        <div class="section-title">
+          <div class="title">Kontak Kami</div>
+          <div class="subtitle">Lorem ipsum dolor sit amet</div>
         </div>
 
       </div>
