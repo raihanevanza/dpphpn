@@ -56,6 +56,12 @@
 
    <!-- ======= Features Section ======= -->
    <section id="features" class="features">
+        <div class="container">
+            <div class="section-title">
+                <div class="title">NEWS</div>
+                <div class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+            </div>
+        </div>
       <div class="container" data-aos="fade-up">
 
         <ul class="nav nav-tabs row gy-4 d-flex">

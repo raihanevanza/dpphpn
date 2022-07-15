@@ -2087,7 +2087,7 @@ section {
   transition: all 0.3s;
 }
 
-.portfolio .portfolio-item:before {
+/* .portfolio .portfolio-item:before {
   content: "";
   inset: 0;
   position: absolute;
@@ -2096,7 +2096,7 @@ section {
   transition: 0.5s;
   visibility: hidden;
   opacity: 0;
-}
+} */
 
 .portfolio .portfolio-item .portfolio-info {
   opacity: 0;

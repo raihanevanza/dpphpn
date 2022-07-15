@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
    * Fires the scrollto function on click to links .scrollto
    */
   let selectScrollto = document.querySelectorAll('.scrollto');
-  selectScrollto.forEach(el => el.addEventListener('click', function(event) {
+  selectScrollto.forEach(el => el.addEventListener('click', function (event) {
     if (document.querySelector(this.hash)) {
       event.preventDefault();
 
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
    */
   const mobileNavToogle = document.querySelector('.mobile-nav-toggle');
   if (mobileNavToogle) {
-    mobileNavToogle.addEventListener('click', function(event) {
+    mobileNavToogle.addEventListener('click', function (event) {
       event.preventDefault();
 
       document.querySelector('body').classList.toggle('mobile-nav-active');
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navDropdowns = document.querySelectorAll('.navbar .dropdown > a');
 
   navDropdowns.forEach(el => {
-    el.addEventListener('click', function(event) {
+    el.addEventListener('click', function (event) {
       if (document.querySelector('.mobile-nav-active')) {
         event.preventDefault();
         this.classList.toggle('active');
@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
    */
   const scrollTop = document.querySelector('.scroll-top');
   if (scrollTop) {
-    const togglescrollTop = function() {
+    const togglescrollTop = function () {
       window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
     }
     window.addEventListener('load', togglescrollTop);
@@ -195,10 +195,10 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       let menuFilters = document.querySelectorAll('.portfolio-isotope .portfolio-flters li');
-      menuFilters.forEach(function(el) {
-        el.addEventListener('click', function() {
-          document.querySelector('.portfolio-isotope .portfolio-flters .filter-active').classList.remove('filter-active');
-          this.classList.add('filter-active');
+      menuFilters.forEach(function (el) {
+        el.addEventListener('click', function () {
+          document.querySelector('.portfolio-isotope .portfolio-flters .active').classList.remove('active');
+          this.classList.add('active');
           portfolioIsotope.arrange({
             filter: this.getAttribute('data-filter')
           });
