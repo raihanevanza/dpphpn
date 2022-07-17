@@ -14,13 +14,13 @@ class NewsTable extends Migration
     public function up()
     {
         Schema::create('news', function (Blueprint $table) {
-            $table->integer('news_id', true);
+            $table->integer('id', true);
             $table->string('title');
             $table->string('category');
             $table->text('description');
             $table->text('news_file');
-            $table->integer('created_by');
-            $table->integer('updated_by');
+            $table->integer('created_by')->nullable();
+            $table->integer('updated_by')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

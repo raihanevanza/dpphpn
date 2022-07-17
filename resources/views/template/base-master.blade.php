@@ -18,6 +18,7 @@
     <!-- Custom styles for this template-->
     <link href="{{ url('assets/css/sb-admin-2.min.css') }}" rel="stylesheet">
     <link href="{{ url('assets/vendor/datatables/dataTables.bootstrap4.min.css') }}" rel="stylesheet">
+    <script src="<?php echo url('assets/js/tinymce/js/tinymce/tinymce.min.js'); ?>"></script>
 </head>
 @php
     $admin = session()->get('admin');
