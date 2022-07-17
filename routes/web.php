@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CatalogController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\PageController;
@@ -30,5 +31,6 @@ Route::get('/logout', [PageController::class, 'logout']);
 Route::middleware('administrator')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index']);
     Route::resource('/master-news', NewsController::class);
+    Route::resource('/master-catalog', CatalogController::class);
 });
 // ===================== Administrator ===================== //

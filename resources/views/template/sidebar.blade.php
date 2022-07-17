@@ -7,7 +7,6 @@ $sidebar = [
         'url'   => url('dashboard'),
         'role'  => [
             1,
-            2
         ]
     ],
     [
@@ -17,7 +16,15 @@ $sidebar = [
         'url'   => url('master-news'),
         'role'  => [
             1,
-            2
+        ]
+    ],
+    [
+        'group' => 'catalog',
+        'title' => 'Katalog',
+        'icon'  => 'catalog',
+        'url'   => url('master-catalog'),
+        'role'  => [
+            1,
         ]
     ],
 ];
