@@ -21,7 +21,7 @@ $sidebar = [
     [
         'group' => 'catalog',
         'title' => 'Katalog',
-        'icon'  => 'catalog',
+        'icon'  => 'images',
         'url'   => url('master-catalog'),
         'role'  => [
             1,
