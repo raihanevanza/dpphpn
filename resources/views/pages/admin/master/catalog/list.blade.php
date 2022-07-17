@@ -1,5 +1,5 @@
 @extends('template.base-master')
-@section('title', 'Catalog')
+@section('title', 'Katalog')
     @section('content')
         <!-- Page Heading -->
         <div class="d-sm-flex align-items-center justify-content-between mb-4">
