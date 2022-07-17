@@ -31,6 +31,6 @@ class PageController extends Controller
 
     public function template()
     {
-        return view('HeroBiz.temp_fe.index');
+        return view('template.user.index');
     }
 }
