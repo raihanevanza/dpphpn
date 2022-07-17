@@ -23,14 +23,19 @@ class PageController extends Controller
         }
     }
 
+    public function news()
+    {
+        return view('pages.user.news');
+    }
+
     public function logout()
     {
         session()->flush();
         return redirect(url('/login'));
     }
 
-    public function template()
+    public function template($page)
     {
-        return view('template.user.index');
+        return view('template.user.' . $page);
     }
 }

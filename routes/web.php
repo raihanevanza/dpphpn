@@ -24,11 +24,12 @@ Route::get('/', function () {
 
 Route::get('/home', [PageController::class, 'home']);
 
+// ===================== User ===================== //
+Route::get('/news', [PageController::class, 'news']);
+// ===================== User ===================== //
 
 // ===================== Template ===================== //
-
-Route::get('/template', [PageController::class, 'template']);
-
+Route::get('/template/{page}', [PageController::class, 'template']);
 // ===================== Template ===================== //
 
 // ===================== Administrator ===================== //
@@ -41,6 +42,5 @@ Route::middleware('administrator')->group(function () {
     Route::resource('/master-news', NewsController::class);
     Route::resource('/master-catalog', CatalogController::class);
     Route::resource('/master-work-program', WorkProgramController::class);
-    
 });
 // ===================== Administrator ===================== //

@@ -6,7 +6,7 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="footer-info">
-                <img src="../assets/img/logo-white.png" alt="" class="logo-footer">
+                <img src="{{ url('assets_user/img/logo-white.png') }}" alt="" class="logo-footer">
             </div>
           </div>
 
