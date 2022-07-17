@@ -24,6 +24,13 @@ Route::get('/', function () {
 
 Route::get('/home', [PageController::class, 'home']);
 
+
+// ===================== Template ===================== //
+
+Route::get('/template', [PageController::class, 'template']);
+
+// ===================== Template ===================== //
+
 // ===================== Administrator ===================== //
 Route::get('/login', [PageController::class, 'login']);
 Route::post('/login', [PageController::class, 'authenticate']);
@@ -34,5 +41,6 @@ Route::middleware('administrator')->group(function () {
     Route::resource('/master-news', NewsController::class);
     Route::resource('/master-catalog', CatalogController::class);
     Route::resource('/master-work-program', WorkProgramController::class);
+    
 });
 // ===================== Administrator ===================== //

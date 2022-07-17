@@ -28,4 +28,9 @@ class PageController extends Controller
         session()->flush();
         return redirect(url('/login'));
     }
+
+    public function template()
+    {
+        return view('HeroBiz.temp_fe.index');
+    }
 }
