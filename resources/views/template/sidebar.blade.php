@@ -27,6 +27,15 @@ $sidebar = [
             1,
         ]
     ],
+    [
+        'group' => 'work-program',
+        'title' => 'Program Kerja',
+        'icon'  => 'briefcase',
+        'url'   => url('master-work-program'),
+        'role'  => [
+            1,
+        ]
+    ],
 ];
 $admin = session()->get('admin');
 $menu['role_id'] = $admin['role_id'];
