@@ -752,7 +752,7 @@ section {
 }
 
 .hero .img {
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
   -webkit-animation: fadeInDownLite 1s both;
   animation: fadeInDownLite 1s both;
 }
@@ -833,6 +833,10 @@ section {
 .hero .carousel-control-prev:hover,
 .hero .carousel-control-next:hover {
   opacity: 0.9;
+}
+
+.carousel-indicators {
+  bottom: 120px;
 }
 
 .hero .carousel-indicators li {
