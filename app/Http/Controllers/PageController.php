@@ -23,9 +23,25 @@ class PageController extends Controller
         }
     }
 
-    public function news()
+    public function home()
     {
-        return view('pages.user.news');
+        $view = [
+            'news' => Page::get_news(),
+            'body_id' => 'home-page'
+        ];
+
+        return view('pages.user.home', $view);
+    }
+
+    public function news($category)
+    {
+        $view = [
+            'news' => Page::get_news_by_category(),
+            'body_id' => 'news-page',
+            'category' => $category
+        ];
+
+        return view('pages.user.news', $view);
     }
 
     public function logout()

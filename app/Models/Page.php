@@ -18,4 +18,21 @@ class Page extends Model
             return false;
         }
     }
+
+    public static function get_news()
+    {
+        $data = DB::table('news')->latest()->limit(3)->get();
+        return $data;
+    }
+
+    public static function get_news_by_category()
+    {
+        $grouping = [];
+        $data = DB::table('news')->latest()->get();
+
+        foreach ($data as $key => $value) {
+            $grouping[$value->category][] = $value;
+        }
+        return $grouping;
+    }
 }

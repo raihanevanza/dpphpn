@@ -12,6 +12,7 @@ class Catalog extends Model
     use SoftDeletes;
     protected $table = 'catalogs';
     protected $fillable = [
+        'title',
         'description',
         'catalog_file',
         'created_by',

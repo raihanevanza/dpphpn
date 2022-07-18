@@ -18,14 +18,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/home', [PageController::class, 'home']);
+Route::get('/', [PageController::class, 'home']);
 
 // ===================== User ===================== //
-Route::get('/news', [PageController::class, 'news']);
+Route::get('/news/{category}', [PageController::class, 'news']);
 // ===================== User ===================== //
 
 // ===================== Template ===================== //

@@ -11,6 +11,13 @@ class CatalogController extends Controller
 {
     public $form = [
         [
+            'field' => 'title',
+            'type'  => 'text',
+            'label' => 'Judul',
+            'placeholder' => '',
+            'rules' => 'required'
+        ],
+        [
             'field' => 'description',
             'type'  => 'textarea',
             'label' => 'Deskripsi',
@@ -90,6 +97,7 @@ class CatalogController extends Controller
         $validated = $request->validate($rules);
 
         $post = [
+            'title' => $request->title,
             'description' => $request->description,
             'created_by' => $admin['user_id'],
             'created_at' => date('Y-m-d H:i:s')
@@ -163,6 +171,7 @@ class CatalogController extends Controller
         $validated = $request->validate($rules);
 
         $post = [
+            'title' => $request->title,
             'description' => $request->description,
             'updated_by' => $admin['user_id'],
             'updated_at' => date('Y-m-d H:i:s')
