@@ -299,7 +299,7 @@
       </div>
     </section><!-- End Portfolio Section -->
   
-    </main><!-- End #main -->
+  </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   @include('template.user.footer')

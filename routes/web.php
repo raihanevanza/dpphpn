@@ -22,6 +22,7 @@ Route::get('/', [PageController::class, 'home']);
 
 // ===================== User ===================== //
 Route::get('/news/{category}', [PageController::class, 'news']);
+Route::get('/catalog', [PageController::class, 'catalog']);
 // ===================== User ===================== //
 
 // ===================== Template ===================== //

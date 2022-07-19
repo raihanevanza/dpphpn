@@ -40,7 +40,7 @@
              <div class="tab-content">
                 @foreach ($tablist as $tab)
                 <?php if(isset($news[ucfirst($tab['name'])])) { ?>
-                <div class="tab-pane active show" id="tab-{{ $tab['id'] }}">
+                <div class="tab-pane {{ ($category == strtolower($tab['name'])) ? 'active show' : '' }}" id="tab-{{ $tab['id'] }}">
                     <div class="row recent-blog-posts" id="recent-blog-posts">
                         @foreach ($news[ucfirst($tab['name'])] as $keys => $items)
                         <div class="col-lg-4 news-content" data-aos="fade-up" data-aos-delay="200">

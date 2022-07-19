@@ -44,6 +44,16 @@ class PageController extends Controller
         return view('pages.user.news', $view);
     }
 
+    public function catalog()
+    {
+        $view = [
+            'catalogs' => Page::get_catalogs(),
+            'body_id' => 'catalog-page',
+        ];
+
+        return view('pages.user.catalog', $view);
+    }
+
     public function logout()
     {
         session()->flush();
