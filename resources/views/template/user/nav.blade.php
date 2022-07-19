@@ -23,7 +23,20 @@
         <i class="bi bi-list mobile-nav-toggle d-none"></i>
       </nav><!-- .navbar -->
 
-      <a class="btn-getstarted scrollto" href="#about">Get Started</a>
-
+      <a class="btn-getstarted scrollto" href="#about">Request</a>
     </div>
   </header>
+  <div class="modal-request">
+    <form action="/" class="form-request">
+    <label for="fname" class="label ">Email</label>
+    <input type="text" id="fname" name="fname" class="input"><br>
+    <label for="fname" class="label ">Pilih Kategori</label>
+      <select id="cars" name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+      <input type="submit">
+    </form>
+  </div>

@@ -137,6 +137,52 @@ $primary-color: #116d38;
     }
 }
 
+.modal-request {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    display: none;
+
+    .form-request {
+        width: 350px;
+        height: 400px;
+        padding: 20px;
+        position: relative;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+
+        .label {
+            font-size: 22px;
+            font-family: $pop-reg;
+        }
+
+        .input {
+            width: 100%;
+            height: 36px;
+            border-radius: 8px;
+            padding: 10px;
+        }
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        z-index: -1;
+    }
+}
+
 #home-page {
     .accent-1 {
         position: absolute;
