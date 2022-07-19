@@ -52,57 +52,6 @@
   @include('template.user.nav')
   <!-- End Header -->
 
-    <!-- ======= Header Carousel Section ======= -->
-    <section id="hero" class="hero carousel  carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-      <?php
-        $arr = array (
-            '1' => array(
-                'active' => 'active',
-                'image' => 'blog-1.jpg',
-                'title' 	=> 'Selamat Datang di HPN',
-                'subtitle'	=> 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-            ),
-            '2' => array(
-              'active' => '',
-              'image' => 'blog-2.jpg',
-              'title' 	=> 'Selamat Datang di HPN',
-              'subtitle'	=> 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-            ),
-            '3' => array(
-              'active' => '',
-              'image' => 'blog-3.jpg',
-              'title' 	=> 'Selamat Datang di HPN',
-              'subtitle'	=> 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-            ),
-        );
-            foreach ($arr as $key => $value) {
-    ?>
-    <div class="carousel-item <?= $value['active'] ?> slider-wp">
-      <div class="container">
-            <div class="content-wp">
-                <img src="{{ url('assets_user/img/blog/'.$value['image']) }}" alt="" class="img-fluid img">
-                <div class="col-lg-9 text-center">
-                    <div class="title-carousel"><?= $value['title'] ?></div>
-                    <div class="subtitle-carousel"><?= $value['subtitle'] ?></div>
-                </div>
-            </div>
-      </div>
-    </div>
-    <?php } ?><!-- End Carousel Item -->
-
-        <a class="carousel-control-prev" href="#hero" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-        </a>
-
-        <a class="carousel-control-next" href="#hero" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-        </a>
-
-        <ol class="carousel-indicators"></ol>
-
-  </section>
-  <!-- End Header Carousel -->
-
   <main id="main-wrapper">
     <!-- ======= Catalog Section ======= -->
     <section id="portfolio" class="portfolio" data-aos="fade-up">
@@ -150,7 +99,7 @@
                       <a href="{{ url('assets_user/img/portfolio/app-1.jpg') }}" title="App 1" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                     </div>
                     <div class="detail-link">
-                      <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                      <a href="{{ url('template/detail-catalog') }}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                     </div>
                   </div>               
                 </div>
@@ -177,7 +126,7 @@
                       <a href="{{ url('assets_user/img/portfolio/app-2.jpg') }}" title="App 1" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                     </div>
                     <div class="detail-link">
-                      <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                      <a href="{{ url('template/detail-catalog') }}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                     </div>
                   </div>               
                 </div>
@@ -204,7 +153,7 @@
                       <a href="{{ url('assets_user/img/portfolio/app-3.jpg') }}" title="App 1" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                     </div>
                     <div class="detail-link">
-                      <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                      <a href="{{ url('template/detail-catalog') }}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                     </div>
                   </div>               
                 </div>
@@ -231,7 +180,7 @@
                       <a href="{{ url('assets_user/img/portfolio/books-1.jpg') }}" title="App 1" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                     </div>
                     <div class="detail-link">
-                      <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                      <a href="{{ url('template/detail-catalog') }}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                     </div>
                   </div>               
                 </div>
@@ -258,7 +207,7 @@
                       <a href="{{ url('assets_user/img/portfolio/books-2.jpg') }}" title="App 1" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                     </div>
                     <div class="detail-link">
-                      <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                      <a href="{{ url('template/detail-catalog') }}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                     </div>
                   </div>               
                 </div>
@@ -285,7 +234,7 @@
                       <a href="{{ url('assets_user/img/portfolio/books-3.jpg') }}" title="App 1" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                     </div>
                     <div class="detail-link">
-                      <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                      <a href="{{ url('template/detail-catalog') }}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                     </div>
                   </div>               
                 </div>

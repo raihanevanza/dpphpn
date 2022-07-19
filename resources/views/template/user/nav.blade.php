@@ -23,20 +23,37 @@
         <i class="bi bi-list mobile-nav-toggle d-none"></i>
       </nav><!-- .navbar -->
 
-      <a class="btn-getstarted scrollto" href="#about">Request</a>
+      <a class="btn-getstarted scrollto modal-active" onClick="modalActive()" href="#about">Request</a>
     </div>
   </header>
-  <div class="modal-request">
+  <div class="modal-request" id="requestNews">
     <form action="/" class="form-request">
-    <label for="fname" class="label ">Email</label>
-    <input type="text" id="fname" name="fname" class="input"><br>
-    <label for="fname" class="label ">Pilih Kategori</label>
-      <select id="cars" name="cars">
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="fiat">Fiat</option>
-        <option value="audi">Audi</option>
-      </select>
-      <input type="submit">
+      <div class="header">Request Berita</div>
+      <div class="form-wp">
+        <label for="fname" class="label ">Alamat Email</label>
+        <input type="text" id="fname" name="fname" class="input">
+        <label for="fname" class="label ">Pilih Kategori</label>
+        <select class="select-wp" id="news" name="news">
+          <option value="1">Pilih Kategori Berita</option>
+          <option value="1">Daerah</option>
+          <option value="2">Nasional</option>
+        </select>
+        <input class="btn-submit" type="submit">
+      </div>
     </form>
+    <div class="close-button" onClick="modalDeActive()">
+      <span class="close"></span>
+      <span class="close"></span>
+    </div>
   </div>
+
+  <script>
+    function modalActive() {
+      var element = document.getElementById("requestNews");
+      element.classList.add("active");
+    }
+    function modalDeActive() {
+      var element = document.getElementById("requestNews");
+      element.classList.remove("active");
+    }
+  </script>

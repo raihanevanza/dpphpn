@@ -90,7 +90,7 @@
             <div class="portfolio-info">
               <h3>Informasi Produk</h3>
               <ul>
-                <li><strong>Pemilik</strong>: Raihan Evanza Ganteng beut</li>
+                <li><strong>Pemilik</strong>: Raihan Evanza Simanik</li>
                 <li><strong>Jenis Usaha</strong>: Ayam Geprek</li>
                 <li><strong>Tanggal Pembuatan</strong>: 01 April 2022</li>
               </ul>

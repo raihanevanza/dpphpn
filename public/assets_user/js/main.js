@@ -28,6 +28,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /**
+  * Modal Request
+  */
+  /**
    * Navbar links active state on scroll
    */
   let navbarlinks = document.querySelectorAll('#navbar .scrollto');
