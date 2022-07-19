@@ -91,6 +91,52 @@ $primary-color: #116d38;
     }
 }
 
+.carousel {
+    .content-wp {
+        width: 100%;
+        display: flex;
+        height: 700px;
+        margin-top: -90px;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            object-fit: cover;
+        }
+
+        .title-carousel {
+            font-family: $pop-bold;
+            font-size: 56px;
+            color: #fff;
+            position: relative;
+            z-index: 9;
+        }
+
+        .subtitle-carousel {
+            font-family: $pop-light;
+            font-size: 28px;
+            color: #fff;
+            position: relative;
+            z-index: 9;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: -46px;
+            left: 0;
+            background-color: rgba($color: #000000, $alpha: 0.4);
+        }
+    }
+}
+
 #home-page {
     .accent-1 {
         position: absolute;
@@ -179,7 +225,8 @@ $primary-color: #116d38;
 }
 
 #main-wrapper {
-    margin-top: 150px;
+    margin-top: 0px;
+    padding: 32px 0;
 }
 
 #news-page {

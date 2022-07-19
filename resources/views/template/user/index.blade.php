@@ -52,49 +52,56 @@
   @include('template.user.nav')
   <!-- End Header -->
 
-  <section id="hero-animated" class="hero-animated d-flex align-items-center">
-  <!-- <img src="../assets/img/accent-1.png" class="accent-1" data-aos="zoom-out"> -->
-    <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative" data-aos="zoom-out">
-      <h2 class="title-header">Mewujudnya Pengusaha Nahdliyin yang berdaya saing tinggi dan Beretika Bisnis Islami</h2>
-      <!-- <div class="d-flex">
-        <a href="#about" class="btn-get-started scrollto">Get Started</a>
-        <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
-      </div> -->
-      <div class="gallery-header">
-        <div class="image-wrapper">
-            <div class="image img-1">
-                <img src="{{ url('assets_user/img/services-1.jpg') }}" class="img-1">
+  <!-- ======= Header Carousel Section ======= -->
+  <section id="hero" class="hero carousel  carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+      <?php
+        $arr = array (
+            '1' => array(
+                'active' => 'active',
+                'image' => 'blog-1.jpg',
+                'title' 	=> 'Selamat Datang di HPN',
+                'subtitle'	=> 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+            ),
+            '2' => array(
+              'active' => '',
+              'image' => 'blog-2.jpg',
+              'title' 	=> 'Selamat Datang di HPN',
+              'subtitle'	=> 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+            ),
+            '3' => array(
+              'active' => '',
+              'image' => 'blog-3.jpg',
+              'title' 	=> 'Selamat Datang di HPN',
+              'subtitle'	=> 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+            ),
+        );
+            foreach ($arr as $key => $value) {
+    ?>
+    <div class="carousel-item <?= $value['active'] ?> slider-wp">
+      <div class="container">
+            <div class="content-wp">
+                <img src="{{ url('assets_user/img/blog/'.$value['image']) }}" alt="" class="img-fluid img">
+                <div class="col-lg-9 text-center">
+                    <div class="title-carousel"><?= $value['title'] ?></div>
+                    <div class="subtitle-carousel"><?= $value['subtitle'] ?></div>
+                </div>
             </div>
-        </div>
-        <div class="image-wrapper">
-            <div class="image img-2">
-                <img src="{{ url('assets_user/img/services-2.jpg') }}" class="img-1">
-            </div>
-            <div class="image img-3">
-                <img src="{{ url('assets_user/img/services-3.jpg') }}" class="img-1">
-            </div>
-        </div>
-        <div class="image-wrapper">
-            <div class="image img-4">
-                <img src="{{ url('assets_user/img/services-2.jpg') }}" class="img-1">
-            </div>
-        </div>
-        <div class="image-wrapper">
-            <div class="image img-5">
-                <img src="{{ url('assets_user/img/services-3.jpg') }}" class="img-1">
-            </div>
-            <div class="image img-6">
-                <img src="{{ url('assets_user/img/services-2.jpg') }}" class="img-1">
-            </div>
-        </div>
-        <div class="image-wrapper">
-            <div class="image img-7">
-                <img src="{{ url('assets_user/img/services-1.jpg') }}" class="img-1">
-            </div>
-        </div>
       </div>
     </div>
+    <?php } ?><!-- End Carousel Item -->
+
+        <a class="carousel-control-prev" href="#hero" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+        <ol class="carousel-indicators"></ol>
+
   </section>
+  <!-- End Header Carousel -->
 
   <main id="main">
 
