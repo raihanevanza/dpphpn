@@ -35,4 +35,10 @@ class Page extends Model
         }
         return $grouping;
     }
+
+    public static function get_catalogs()
+    {
+        $data = DB::table('catalogs')->latest()->get();
+        return $data;
+    }
 }
