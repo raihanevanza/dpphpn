@@ -36,6 +36,15 @@ $sidebar = [
             1,
         ]
     ],
+    [
+        'group' => 'organization-structure',
+        'title' => 'Struktur Organisasi',
+        'icon'  => 'users',
+        'url'   => url('master-organization-structure'),
+        'role'  => [
+            1,
+        ]
+    ],
 ];
 $admin = session()->get('admin');
 $menu['role_id'] = $admin['role_id'];

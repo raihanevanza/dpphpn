@@ -3,6 +3,7 @@
 use App\Http\Controllers\CatalogController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\NewsController;
+use App\Http\Controllers\OrganizationStructureController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\WorkProgramController;
 use Illuminate\Support\Facades\Route;
@@ -39,5 +40,6 @@ Route::middleware('administrator')->group(function () {
     Route::resource('/master-news', NewsController::class);
     Route::resource('/master-catalog', CatalogController::class);
     Route::resource('/master-work-program', WorkProgramController::class);
+    Route::resource('/master-organization-structure', OrganizationStructureController::class);
 });
 // ===================== Administrator ===================== //
