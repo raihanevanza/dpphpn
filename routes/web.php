@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CatalogController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DpphpnProfileController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\OrganizationAgendaController;
 use App\Http\Controllers\OrganizationStructureController;
@@ -43,5 +44,6 @@ Route::middleware('administrator')->group(function () {
     Route::resource('/master-work-program', WorkProgramController::class);
     Route::resource('/master-organization-structure', OrganizationStructureController::class);
     Route::resource('/master-organization-agenda', OrganizationAgendaController::class);
+    Route::resource('/master-profile', DpphpnProfileController::class);
 });
 // ===================== Administrator ===================== //

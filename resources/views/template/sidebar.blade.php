@@ -54,6 +54,15 @@ $sidebar = [
             1,
         ]
     ],
+    [
+        'group' => 'profile',
+        'title' => 'Profile',
+        'icon'  => 'user',
+        'url'   => url('master-profile'),
+        'role'  => [
+            1,
+        ]
+    ],
 ];
 $admin = session()->get('admin');
 $menu['role_id'] = $admin['role_id'];
