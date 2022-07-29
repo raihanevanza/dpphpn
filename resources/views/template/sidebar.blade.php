@@ -45,6 +45,15 @@ $sidebar = [
             1,
         ]
     ],
+    [
+        'group' => 'organization-agenda',
+        'title' => 'Agenda Organisasi',
+        'icon'  => 'calendar',
+        'url'   => url('master-organization-agenda'),
+        'role'  => [
+            1,
+        ]
+    ],
 ];
 $admin = session()->get('admin');
 $menu['role_id'] = $admin['role_id'];
