@@ -16,8 +16,15 @@
               <li><a href="{{ url('template/news') }}">Trending</a></li>
             </ul>
           </li>
-
-          <li><a class="nav-link scrollto" href="#">Program Kerja</a></li>
+          <li class="dropdown" style="margin-left: 20px"><span>Profile</span> <i class="bi bi-chevron-down dropdown-indicator"></i>
+            <ul>
+              <li><a href="{{ url('template/profile-lembaga') }}" class="active">Profile Lembaga</a></li>
+              <li><a href="{{ url('template/struktur-organisasi') }}">Struktur Organisasi</a></li>
+              <li><a href="{{ url('template/profile') }}">Profile DPP HPN</a></li>
+              <li><a href="{{ url('template/daftar-dpw-dpx') }}">Daftar DPW & DPC</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="{{ url('template/program-kerja') }}">Program Kerja</a></li>
           <li><a class="nav-link scrollto" href="{{ url('template/catalog') }}">Katalog</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle d-none"></i>

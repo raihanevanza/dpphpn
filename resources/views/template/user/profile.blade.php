@@ -34,86 +34,95 @@
   <!-- <link href="assets/css/variables-red.css" rel="stylesheet"> -->
   <!-- <link href="assets/css/variables-pink.css" rel="stylesheet"> -->
 
-  <!-- Template Main CSS File -->
+  <!-- Template Main CSS File -->  
   <link href="{{ url('assets_user/css/main.css') }}" rel="stylesheet">
   <link href="{{ url('assets_user/css/main-v2.css') }}" rel="stylesheet">
 
 </head>
 
+<body id="profile">
 
-<body>
-
- <!-- ======= Header ======= -->
- @include('template.user.nav')
+  <!-- ======= Header ======= -->
+  @include('template.user.nav')
   <!-- End Header -->
 
   <main id="main">
 
-    <!-- ======= Catalog Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
+    <!-- ======= Recent Profile Section ======= -->
+    <section id="profile" class="profile">
       <div class="container" data-aos="fade-up">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="{{ url('assets_user/img/blog/blog-1.jpg') }}" alt="">
+        <div class="section-ketua">
+            <div class="card-wp">
+                <div class="image">
+                    <img src="{{ url('assets_user/img/blog/blog-1.jpg') }}" class="image img-1"/>
                 </div>
-
-                <div class="swiper-slide">
-                  <img src="{{ url('assets_user/img/blog/blog-2.jpg') }}" alt="">
+                <div class="content-profile">
+                    <div class="title">Muhammad Abdullah</div>
+                    <div class="subtitle">Ketua</div>
                 </div>
-
-                <div class="swiper-slide">
-                  <img src="{{ url('assets_user/img/blog/blog-3.jpg') }}" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="{{ url('assets_user/img/blog/blog-1.jpg') }}" alt="">
-                </div>
-
-              </div>
-              <div class="swiper-pagination"></div>
             </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Informasi Produk</h3>
-              <ul>
-                <li><strong>Pemilik</strong>: Raihan Evanza Simanik</li>
-                <li><strong>Jenis Usaha</strong>: Ayam Geprek</li>
-                <li><strong>Tanggal Pembuatan</strong>: 01 April 2022</li>
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>Deskripsi Produk</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
-            </div>
-          </div>
-
         </div>
-
+        <div class="row section-anggota">
+            <div class="col-4">
+            <div class="card-wp">
+                <div class="image">
+                    <img src="{{ url('assets_user/img/blog/blog-1.jpg') }}" class="image img-1"/>
+                </div>
+                <div class="content-profile">
+                    <div class="title">Muhammad Asep Munawar</div>
+                    <div class="subtitle">Anggota</div>
+                </div>
+            </div>
+            </div>
+            <div class="col-4">
+            <div class="card-wp">
+                <div class="image">
+                    <img src="{{ url('assets_user/img/blog/blog-1.jpg') }}" class="image img-1"/>
+                </div>
+                <div class="content-profile">
+                    <div class="title">Abdullah Asnawi</div>
+                    <div class="subtitle">Anggota</div>
+                </div>
+            </div>
+            </div>
+            <div class="col-4">
+            <div class="card-wp">
+                <div class="image">
+                    <img src="{{ url('assets_user/img/blog/blog-1.jpg') }}" class="image img-1"/>
+                </div>
+                <div class="content-profile">
+                    <div class="title">Siti Julaeha</div>
+                    <div class="subtitle">Anggota</div>
+                </div>
+            </div>
+            </div>
+            <div class="col-4">
+            <div class="card-wp">
+                <div class="image">
+                    <img src="{{ url('assets_user/img/blog/blog-1.jpg') }}" class="image img-1"/>
+                </div>
+                <div class="content-profile">
+                    <div class="title">Bella Anggita</div>
+                    <div class="subtitle">Anggota</div>
+                </div>
+            </div>
+            </div>
+        </div>
       </div>
-    </section><!-- End Catalog Details Section -->
+    </section>
 
   </main><!-- End #main -->
 
- <!-- ======= Footer ======= -->
- @include('template.user.footer')
+  <!-- ======= Footer ======= -->
+  @include('template.user.footer')
   <!-- End Footer -->
 
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader"></div>
 
- <!-- Vendor JS Files -->
- <script src="{{ url('assets_user/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <!-- Vendor JS Files -->
+  <script src="{{ url('assets_user/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
   <script src="{{ url('assets_user/vendor/aos/aos.js') }}"></script>
   <script src="{{ url('assets_user/vendor/glightbox/js/glightbox.min.js') }}"></script>
   <script src="{{ url('assets_user/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>

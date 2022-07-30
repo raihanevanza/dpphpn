@@ -392,6 +392,244 @@ $primary-color: #116d38;
     }
 }
 
+#detail-news {
+    .blog {
+        .blog-details {
+            .post-img {
+                img {
+                    width: 100%;
+                    height: 500px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+#struktur-organisasi {
+    .wp-image {
+        width: 100%;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+#program-kerja {
+    .visi-misi {
+        padding-top: 125px;
+
+        .image-left {
+            width: 100%;
+            height: 600px;
+            border-radius: 8px;
+            position: relative;
+
+            .image {
+                position: absolute;
+                object-fit: cover;
+                border-radius: 8px;
+                z-index: 3;
+                transition: all .32s;
+                overflow: hidden;
+                width: 48%;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+
+                &.img-1 {
+                    height: 100%;
+                    left: 0;
+                }
+
+                &.img-2 {
+                    height: 48%;
+                    right: 0;
+                    top: 0;
+                }
+
+                &.img-3 {
+                    height: 48%;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+        }
+
+        .image-right {
+            width: 100%;
+            height: 600px;
+            border-radius: 8px;
+            position: relative;
+
+            .image {
+                position: absolute;
+                object-fit: cover;
+                border-radius: 8px;
+                z-index: 3;
+                transition: all .32s;
+                overflow: hidden;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+
+                &.img-1 {
+                    height: 48%;
+                    width: 48%;
+                    left: 0;
+                    top: 0;
+                }
+
+                &.img-2 {
+                    height: 48%;
+                    width: 48%;
+                    right: 0;
+                    top: 0;
+                }
+
+                &.img-3 {
+                    height: 48%;
+                    width: 100%;
+                    left: 0;
+                    bottom: 0;
+                }
+            }
+        }
+
+        .title-section {
+            font-family: $pop-bold;
+            font-size: 42px;
+            color: #000;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            font-size: 18px;
+            font-family: $pop-reg;
+            line-height: 32px;
+
+            ol {
+                li {
+                    margin-top: 8px;
+                }
+            }
+        }
+
+        .misi {
+            margin-top: 120px;
+        }
+
+        .ad-art {
+            width: 100%;
+            padding: 64px;
+            display: flex;
+            align-items: center;
+            background-color: rgba($primary-color, 0.5);
+            border-radius: 16px;
+            margin-top: 50px;
+            justify-content: center;
+            font-size: 18px;
+
+
+            .btn-download {
+                width: 250px;
+                height: 64px;
+                border-radius: 8px;
+                font-size: 14px;
+                font-family: $pop-bold;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $primary-color;
+                transition: all .32s;
+                color: #fff;
+                cursor: pointer;
+                border: none;
+                margin-left: auto;
+
+                &:hover {
+                    background-color: darken($color: $primary-color, $amount: 5);
+                }
+            }
+        }
+    }
+}
+
+#profile {
+    margin-top: 14px;
+
+    .section-ketua {
+        width: 32%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .section-anggota {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-wp {
+        width: 100%;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 100px;
+
+        .image {
+            width: 100%;
+            height: 350px;
+            position: relative;
+            transition: all .32s;
+            overflow: hidden;
+            border-radius: 8px;
+            cursor: pointer;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                position: absolute;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+        .content-profile {
+            text-align: center;
+            margin-top: 20px;
+
+            .title {
+                font-family: $pop-bold;
+                font-size: 20px;
+                line-height: 32px;
+                color: #000;
+            }
+
+            .subtitle {
+                font-family: $pop-reg;
+                font-size: 20px;
+                line-height: 32px;
+                color: rgba(#000, 0.5);
+            }
+        }
+    }
+}
+
 #catalog-page {
     .filter-tab {
         padding: 12px 18px;
