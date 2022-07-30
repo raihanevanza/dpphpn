@@ -63,6 +63,15 @@ $sidebar = [
             1,
         ]
     ],
+    [
+        'group' => 'region',
+        'title' => 'DPW & DPC',
+        'icon'  => 'map',
+        'url'   => url('master-region'),
+        'role'  => [
+            1,
+        ]
+    ],
 ];
 $admin = session()->get('admin');
 $menu['role_id'] = $admin['role_id'];
