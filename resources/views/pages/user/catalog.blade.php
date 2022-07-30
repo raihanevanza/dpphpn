@@ -37,12 +37,12 @@
                     </div>
                     <div class="col-4 link-wp">
                       <div class="gallery-catalog">
-                        <a href="{{ url('uploads/catalog_file/'.$item->catalog_file) }}" title="App 1" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        <a href="{{ url('uploads/catalog_file/'.$item->catalog_file) }}" title="{{ $item->title }}" data-gallery="portfolio-gallery" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                       </div>
                       <div class="detail-link">
-                        <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                        <a href="{{ url('detail-catalog/'.$item->id) }}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                       </div>
-                    </div>               
+                    </div>
                   </div>
                 </div>
             </div><!-- End Item -->
@@ -54,6 +54,6 @@
 
       </div>
     </section><!-- End Portfolio Section -->
-  
+
 </main><!-- End #main -->
 @endsection

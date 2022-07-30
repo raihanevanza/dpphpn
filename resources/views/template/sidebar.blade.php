@@ -72,6 +72,24 @@ $sidebar = [
             1,
         ]
     ],
+    [
+        'group' => 'vision',
+        'title' => 'Visi & Misi',
+        'icon'  => 'eye',
+        'url'   => url('master-vision'),
+        'role'  => [
+            1,
+        ]
+    ],
+    [
+        'group' => 'request',
+        'title' => 'Request',
+        'icon'  => 'edit',
+        'url'   => url('master-request'),
+        'role'  => [
+            1,
+        ]
+    ],
 ];
 $admin = session()->get('admin');
 $menu['role_id'] = $admin['role_id'];

@@ -12,7 +12,7 @@ class OrganizationAgendaController extends Controller
     public $form = [
         [
             'field' => 'description',
-            'type'  => 'textarea',
+            'type'  => 'text',
             'label' => 'Agenda',
             'placeholder' => '',
             'rules' => 'required'

@@ -3,12 +3,15 @@
 use App\Http\Controllers\CatalogController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DpphpnProfileController;
+use App\Http\Controllers\MessageController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\OrganizationAgendaController;
 use App\Http\Controllers\OrganizationStructureController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\RegionController;
+use App\Http\Controllers\VisionMissionController;
 use App\Http\Controllers\WorkProgramController;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,11 +25,28 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/clear-cache', function () {
+    Artisan::call('cache:clear');
+    Artisan::call('route:clear');
+    Artisan::call('config:clear');
+    Artisan::call('view:clear');
+    Artisan::call('optimize:clear');
+    Artisan::call('migrate');
+});
+
 Route::get('/', [PageController::class, 'home']);
 
 // ===================== User ===================== //
 Route::get('/news/{category}', [PageController::class, 'news']);
 Route::get('/catalog', [PageController::class, 'catalog']);
+Route::post('/send-message', [PageController::class, 'send_message']);
+Route::get('/detail-news/{id}', [PageController::class, 'detail_news']);
+Route::get('/profile-lembaga', [PageController::class, 'profile_lembaga']);
+Route::get('/struktur-organisasi', [PageController::class, 'struktur_organisasi']);
+Route::get('/profile-dpphpn', [PageController::class, 'profile_dpphpn']);
+Route::get('/program-kerja', [PageController::class, 'program_kerja']);
+Route::get('/detail-catalog/{id}', [PageController::class, 'detail_catalog']);
+Route::get('/daftar-dpwdpc', [PageController::class, 'daftar_dpwdpc']);
 // ===================== User ===================== //
 
 // ===================== Template ===================== //
@@ -47,5 +67,8 @@ Route::middleware('administrator')->group(function () {
     Route::resource('/master-organization-agenda', OrganizationAgendaController::class);
     Route::resource('/master-profile', DpphpnProfileController::class);
     Route::resource('/master-region', RegionController::class);
+    Route::resource('/master-vision', VisionMissionController::class);
+    Route::resource('/master-request', MessageController::class);
+    Route::get('/view-request/{id}', [MessageController::class, 'view']);
 });
 // ===================== Administrator ===================== //

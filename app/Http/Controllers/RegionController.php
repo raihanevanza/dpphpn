@@ -11,19 +11,15 @@ class RegionController extends Controller
 {
     public $form = [
         [
-            'field' => 'type',
-            'type'  => 'dropdown',
-            'label' => 'Tipe',
+            'field' => 'name',
+            'type'  => 'text',
+            'label' => 'Nama',
             'placeholder' => '',
-            'source' => [
-                'Wilayah' => 'Wilayah',
-                'Cabang' => 'Cabang',
-            ],
             'rules' => 'required'
         ],
         [
             'field' => 'description',
-            'type'  => 'textarea',
+            'type'  => 'text',
             'label' => 'Deskripsi',
             'placeholder' => '',
             'rules' => 'required'
@@ -101,7 +97,7 @@ class RegionController extends Controller
         $validated = $request->validate($rules);
 
         $post = [
-            'type' => $request->type,
+            'name' => $request->name,
             'description' => $request->description,
             'created_by' => $admin['user_id'],
             'created_at' => date('Y-m-d H:i:s')
@@ -175,7 +171,7 @@ class RegionController extends Controller
         $validated = $request->validate($rules);
 
         $post = [
-            'type' => $request->type,
+            'name' => $request->name,
             'description' => $request->description,
             'updated_by' => $admin['user_id'],
             'updated_at' => date('Y-m-d H:i:s')

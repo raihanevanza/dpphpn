@@ -1,44 +1,54 @@
 @extends('template.base-user')
 @section('section')
-<section id="hero-animated" class="hero-animated d-flex align-items-center">
-    <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative" data-aos="zoom-out">
-    <h2 class="title-header">Mewujudnya Pengusaha Nahdliyin yang berdaya saing tinggi dan Beretika Bisnis Islami</h2>
-    <div class="gallery-header">
-        <div class="image-wrapper">
-            <div class="image img-1">
-                <img src="{{ url('assets_user/img/services-1.jpg') }}" class="img-1">
-            </div>
-        </div>
-        <div class="image-wrapper">
-            <div class="image img-2">
-                <img src="{{ url('assets_user/img/services-2.jpg') }}" class="img-1">
-            </div>
-            <div class="image img-3">
-                <img src="{{ url('assets_user/img/services-3.jpg') }}" class="img-1">
-            </div>
-        </div>
-        <div class="image-wrapper">
-            <div class="image img-4">
-                <img src="{{ url('assets_user/img/services-2.jpg') }}" class="img-1">
-            </div>
-        </div>
-        <div class="image-wrapper">
-            <div class="image img-5">
-                <img src="{{ url('assets_user/img/services-3.jpg') }}" class="img-1">
-            </div>
-            <div class="image img-6">
-                <img src="{{ url('assets_user/img/services-2.jpg') }}" class="img-1">
-            </div>
-        </div>
-        <div class="image-wrapper">
-            <div class="image img-7">
-                <img src="{{ url('assets_user/img/services-1.jpg') }}" class="img-1">
-            </div>
-        </div>
+<section id="hero" class="hero carousel  carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+    <?php
+      $arr = array (
+          '1' => array(
+              'active' => 'active',
+              'image' => 'blog-1.jpg',
+              'title' 	=> 'Selamat Datang di HPN',
+              'subtitle'	=> 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+          ),
+          '2' => array(
+            'active' => '',
+            'image' => 'blog-2.jpg',
+            'title' 	=> 'Selamat Datang di HPN',
+            'subtitle'	=> 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+          ),
+          '3' => array(
+            'active' => '',
+            'image' => 'blog-3.jpg',
+            'title' 	=> 'Selamat Datang di HPN',
+            'subtitle'	=> 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+          ),
+      );
+          foreach ($arr as $key => $value) {
+  ?>
+  <div class="carousel-item <?= $value['active'] ?> slider-wp">
+    <div class="container">
+          <div class="content-wp">
+              <img src="{{ url('assets_user/img/blog/'.$value['image']) }}" alt="" class="img-fluid img">
+              <div class="col-lg-9 text-center">
+                  <div class="title-carousel"><?= $value['title'] ?></div>
+                  <div class="subtitle-carousel"><?= $value['subtitle'] ?></div>
+              </div>
+          </div>
     </div>
-    </div>
+  </div>
+  <?php } ?><!-- End Carousel Item -->
+
+      <a class="carousel-control-prev" href="#hero" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#hero" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+      <ol class="carousel-indicators"></ol>
+
 </section>
-  
+
 <main id="main">
 
     <!-- ======= Recent Blog Posts Section ======= -->
@@ -61,7 +71,7 @@
                     {{-- <span class="post-author"> / Julia Parker</span> --}}
                 </div>
                 <h3 class="post-title">{{ $item->title }}</p>
-                <a href="{{ url('detail/news/'.$item->id) }}" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                <a href="{{ url('detail-news/'.$item->id) }}" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
                 </div>
             </div>
             @endforeach
@@ -125,20 +135,25 @@
         </div>
 
         <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="{{ url('send-message') }}" method="post" class="php-email-form">
+                @csrf
             <div class="row">
                 <div class="col-md-6 form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                <input type="text" name="name" class="form-control {{ ($errors->has('name')) ? 'is-invalid' : '' }}" id="name" placeholder="Your Name" value="{{ old('name') }}">
+                @if($errors->has('name')) <label class="invalid-feedback"> {{ $errors->first('name') }}</label> @endif
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                <input type="email" class="form-control {{ ($errors->has('email')) ? 'is-invalid' : '' }}" value="{{ old('email') }}" name="email" id="email" placeholder="Your Email">
+                @if($errors->has('email')) <label class="invalid-feedback"> {{ $errors->first('email') }}</label> @endif
                 </div>
             </div>
             <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                <input type="text" class="form-control {{ ($errors->has('subject')) ? 'is-invalid' : '' }}" value="{{ old('subject') }}" name="subject" id="subject" placeholder="Subject">
+                @if($errors->has('subject')) <label class="invalid-feedback"> {{ $errors->first('subject') }}</label> @endif
             </div>
             <div class="form-group mt-3">
-                <textarea class="form-control" name="message" placeholder="Message" required></textarea>
+                <textarea class="form-control {{ ($errors->has('message')) ? 'is-invalid' : '' }}" name="message" placeholder="Message">{{ old('message') }}</textarea>
+                @if($errors->has('message')) <label class="invalid-feedback"> {{ $errors->first('message') }}</label> @endif
             </div>
             <div class="my-3">
                 <div class="loading">Loading</div>
