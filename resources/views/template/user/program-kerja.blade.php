@@ -112,6 +112,47 @@
             </div>
           </div>
         </div>
+        <div class="agenda-organisasi">
+        <div class="section-title">
+          <div class="title">Agenda Organisasi</div>
+          <div class="subtitle">Lorem ipsum dolor sit amet</div>
+        </div>
+          <div class="row section-agenda">
+              <div class="col-4">
+              <div class="card-agenda">
+                  <div class="image">
+                      <img src="{{ url('assets_user/img/blog/blog-1.jpg') }}" class="image img-1"/>
+                  </div>
+                  <div class="content-profile">
+                      <div class="title">Kegiatan Buka Bersama</div>
+                      <!-- <div class="subtitle">19 Jan 2022</div> -->
+                  </div>
+              </div>
+              </div>
+              <div class="col-4">
+              <div class="card-agenda">
+                  <div class="image">
+                      <img src="{{ url('assets_user/img/blog/blog-1.jpg') }}" class="image img-1"/>
+                  </div>
+                  <div class="content-profile">
+                      <div class="title">Silahturahmi Keluarga HPN</div>
+                      <!-- <div class="subtitle">19 Jan 2022</div> -->
+                  </div>
+              </div>
+              </div>
+              <div class="col-4">
+              <div class="card-agenda">
+                  <div class="image">
+                      <img src="{{ url('assets_user/img/blog/blog-1.jpg') }}" class="image img-1"/>
+                  </div>
+                  <div class="content-profile">
+                      <div class="title">Family Gathering</div>
+                      <!-- <div class="subtitle">19 Jan 2022</div> -->
+                  </div>
+              </div>
+              </div>
+          </div>
+        </div>
       </div>
     </section>
 

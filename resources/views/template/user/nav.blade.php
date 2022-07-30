@@ -21,7 +21,7 @@
               <li><a href="{{ url('template/profile-lembaga') }}" class="active">Profile Lembaga</a></li>
               <li><a href="{{ url('template/struktur-organisasi') }}">Struktur Organisasi</a></li>
               <li><a href="{{ url('template/profile') }}">Profile DPP HPN</a></li>
-              <li><a href="{{ url('template/daftar-dpw-dpx') }}">Daftar DPW & DPC</a></li>
+              <li><a href="{{ url('template/daftar-dpw-hpc') }}">Daftar DPW & DPC</a></li>
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="{{ url('template/program-kerja') }}">Program Kerja</a></li>

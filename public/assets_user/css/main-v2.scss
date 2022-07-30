@@ -538,6 +538,7 @@ $primary-color: #116d38;
             margin-top: 50px;
             justify-content: center;
             font-size: 18px;
+            margin-bottom: 75px;
 
 
             .btn-download {
@@ -558,6 +559,61 @@ $primary-color: #116d38;
 
                 &:hover {
                     background-color: darken($color: $primary-color, $amount: 5);
+                }
+            }
+        }
+
+        .agenda-organisasi {
+            .section-agenda {
+                align-items: center;
+                justify-content: center;
+            }
+
+            .card-agenda {
+                width: 100%;
+                height: 450px;
+                display: flex;
+                flex-direction: column;
+                margin-top: 50px;
+
+                .image {
+                    width: 100%;
+                    height: 350px;
+                    position: relative;
+                    transition: all .32s;
+                    overflow: hidden;
+                    border-radius: 8px;
+                    cursor: pointer;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                        position: absolute;
+
+                        &:hover {
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+
+                .content-profile {
+                    margin-top: 20px;
+
+                    .title {
+                        font-family: $pop-bold;
+                        font-size: 20px;
+                        line-height: 32px;
+                        color: #000;
+                    }
+
+                    .subtitle {
+                        font-family: $pop-reg;
+                        font-size: 16px;
+                        line-height: 32px;
+                        color: rgba(#000, 0.5);
+                    }
                 }
             }
         }
@@ -626,6 +682,150 @@ $primary-color: #116d38;
                 line-height: 32px;
                 color: rgba(#000, 0.5);
             }
+        }
+    }
+}
+
+#daftar-dpw {
+    margin-top: 14px;
+
+    .section-dpw {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-dpw {
+        width: 100%;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 100px;
+
+        .image {
+            width: 100%;
+            height: 350px;
+            position: relative;
+            transition: all .32s;
+            overflow: hidden;
+            border-radius: 8px;
+            cursor: pointer;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                position: absolute;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+        .content-profile {
+            margin-top: 20px;
+
+            .title {
+                font-family: $pop-bold;
+                font-size: 20px;
+                line-height: 32px;
+                color: #000;
+            }
+
+            .subtitle {
+                font-family: $pop-reg;
+                font-size: 20px;
+                line-height: 32px;
+                color: rgba(#000, 0.5);
+            }
+        }
+    }
+
+    .modal-dpw-dpc {
+        position: fixed;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        top: -100px;
+        transition: all .32s;
+
+        &.active {
+            opacity: 1;
+            visibility: visible;
+            top: 0px;
+        }
+
+        .section-content {
+            width: 80%;
+
+            .card-dpw {
+                margin-top: 0;
+
+                .content-profile {
+                    text-align: center;
+
+                    .title {
+                        color: #fff;
+                    }
+
+                    .subtitle {
+                        color: rgba(#fff, 0.5)
+                    }
+                }
+            }
+        }
+
+        .close-button {
+            width: 50px;
+            height: 50px;
+            position: relative;
+            cursor: pointer;
+            left: 50px;
+            transition: all.32s;
+            top: -210px;
+            left: 20px;
+
+            span.close {
+                width: 40px;
+                height: 5px;
+                border-radius: 30px;
+                background-color: #fff;
+                position: absolute;
+                top: 50%;
+
+                &:nth-child(1) {
+                    transform: rotate(45deg);
+                }
+
+                &:nth-child(2) {
+                    transform: rotate(-45deg);
+                }
+            }
+
+            &:hover {
+
+                span.close {
+
+                    background-color: $primary-color;
+                }
+            }
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color: #000000, $alpha: 0.9);
+            z-index: -1;
         }
     }
 }

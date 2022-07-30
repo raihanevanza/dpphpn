@@ -355,7 +355,8 @@
     border-radius: 16px;
     margin-top: 50px;
     justify-content: center;
-    font-size: 18px; }
+    font-size: 18px;
+    margin-bottom: 75px; }
     #program-kerja .visi-misi .ad-art .btn-download {
       width: 250px;
       height: 64px;
@@ -373,6 +374,43 @@
       margin-left: auto; }
       #program-kerja .visi-misi .ad-art .btn-download:hover {
         background-color: #0e572d; }
+  #program-kerja .visi-misi .agenda-organisasi .section-agenda {
+    align-items: center;
+    justify-content: center; }
+  #program-kerja .visi-misi .agenda-organisasi .card-agenda {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px; }
+    #program-kerja .visi-misi .agenda-organisasi .card-agenda .image {
+      width: 100%;
+      height: 350px;
+      position: relative;
+      transition: all .32s;
+      overflow: hidden;
+      border-radius: 8px;
+      cursor: pointer; }
+      #program-kerja .visi-misi .agenda-organisasi .card-agenda .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        position: absolute; }
+        #program-kerja .visi-misi .agenda-organisasi .card-agenda .image img:hover {
+          transform: scale(1.2); }
+    #program-kerja .visi-misi .agenda-organisasi .card-agenda .content-profile {
+      margin-top: 20px; }
+      #program-kerja .visi-misi .agenda-organisasi .card-agenda .content-profile .title {
+        font-family: "Poppins-Bold";
+        font-size: 20px;
+        line-height: 32px;
+        color: #000; }
+      #program-kerja .visi-misi .agenda-organisasi .card-agenda .content-profile .subtitle {
+        font-family: "Poppins-Regular";
+        font-size: 16px;
+        line-height: 32px;
+        color: rgba(0, 0, 0, 0.5); }
 
 #profile {
   margin-top: 14px; }
@@ -420,6 +458,103 @@
         font-size: 20px;
         line-height: 32px;
         color: rgba(0, 0, 0, 0.5); }
+
+#daftar-dpw {
+  margin-top: 14px; }
+  #daftar-dpw .section-dpw {
+    align-items: center;
+    justify-content: center; }
+  #daftar-dpw .card-dpw {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 100px; }
+    #daftar-dpw .card-dpw .image {
+      width: 100%;
+      height: 350px;
+      position: relative;
+      transition: all .32s;
+      overflow: hidden;
+      border-radius: 8px;
+      cursor: pointer; }
+      #daftar-dpw .card-dpw .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        position: absolute; }
+        #daftar-dpw .card-dpw .image img:hover {
+          transform: scale(1.2); }
+    #daftar-dpw .card-dpw .content-profile {
+      margin-top: 20px; }
+      #daftar-dpw .card-dpw .content-profile .title {
+        font-family: "Poppins-Bold";
+        font-size: 20px;
+        line-height: 32px;
+        color: #000; }
+      #daftar-dpw .card-dpw .content-profile .subtitle {
+        font-family: "Poppins-Regular";
+        font-size: 20px;
+        line-height: 32px;
+        color: rgba(0, 0, 0, 0.5); }
+  #daftar-dpw .modal-dpw-dpc {
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    top: -100px;
+    transition: all .32s; }
+    #daftar-dpw .modal-dpw-dpc.active {
+      opacity: 1;
+      visibility: visible;
+      top: 0px; }
+    #daftar-dpw .modal-dpw-dpc .section-content {
+      width: 80%; }
+      #daftar-dpw .modal-dpw-dpc .section-content .card-dpw {
+        margin-top: 0; }
+        #daftar-dpw .modal-dpw-dpc .section-content .card-dpw .content-profile {
+          text-align: center; }
+          #daftar-dpw .modal-dpw-dpc .section-content .card-dpw .content-profile .title {
+            color: #fff; }
+          #daftar-dpw .modal-dpw-dpc .section-content .card-dpw .content-profile .subtitle {
+            color: rgba(255, 255, 255, 0.5); }
+    #daftar-dpw .modal-dpw-dpc .close-button {
+      width: 50px;
+      height: 50px;
+      position: relative;
+      cursor: pointer;
+      left: 50px;
+      transition: all 0.32s;
+      top: -210px;
+      left: 20px; }
+      #daftar-dpw .modal-dpw-dpc .close-button span.close {
+        width: 40px;
+        height: 5px;
+        border-radius: 30px;
+        background-color: #fff;
+        position: absolute;
+        top: 50%; }
+        #daftar-dpw .modal-dpw-dpc .close-button span.close:nth-child(1) {
+          transform: rotate(45deg); }
+        #daftar-dpw .modal-dpw-dpc .close-button span.close:nth-child(2) {
+          transform: rotate(-45deg); }
+      #daftar-dpw .modal-dpw-dpc .close-button:hover span.close {
+        background-color: #116d38; }
+    #daftar-dpw .modal-dpw-dpc::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      z-index: -1; }
 
 #catalog-page .filter-tab {
   padding: 12px 18px;
