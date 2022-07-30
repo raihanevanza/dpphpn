@@ -1,21 +1,23 @@
 @extends('template.base-master')
-@section('title', 'Program Kerja')
+@section('title', 'DPW & DPC')
     @section('content')
         <!-- Page Heading -->
         <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Program Kerja</h1>
+            <h1 class="h3 mb-0 text-gray-800">DPW & DPC</h1>
+            <a href="{{ url('master-region/create') }}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-plus fa-sm text-white-50"></i> Data Baru</a>
         </div>
 
         <div class="card shadow mb-4">
             <div class="card-header py-3">
-                <h6 class="m-0 font-weight-bold text-primary">Data Program Kerja</h6>
+                <h6 class="m-0 font-weight-bold text-primary">Data DPW & DPC</h6>
             </div>
             <div class="card-body">
                 <div class="table-responsive">
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                             <tr>
-                                <th>File Program Kerja</th>
+                                <th>Foto</th>
+                                <th>Region</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
@@ -32,10 +34,14 @@
         $('#dataTable').DataTable({
             processing: true,
             serverSide: true,
-            ajax: "{{ route('master-work-program.index') }}",
+            ajax: "{{ route('master-region.index') }}",
             columns: [{
-                    data: 'work_program_file',
-                    name: 'work_program_file'
+                    data: 'region_image',
+                    name: 'region_image'
+                },
+                {
+                    data: 'type',
+                    name: 'type'
                 },
                 {
                     data: 'action',
