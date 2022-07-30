@@ -40,71 +40,54 @@
 
 </head>
 
+<body id="struktur-organisasi">
 
-<body>
-
- <!-- ======= Header ======= -->
+  <!-- ======= Header ======= -->
  @include('template.user.nav')
   <!-- End Header -->
 
   <main id="main">
 
-    <!-- ======= Catalog Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
+    <!-- ======= Profile Lembaga Section ======= -->
+    <section id="blog" class="blog">
       <div class="container" data-aos="fade-up">
 
-        <div class="row gy-4">
+        <div class="row g-5"  style="justify-content: center">
 
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
+          <div class="col-lg-10">
 
-                <div class="swiper-slide">
-                  <img src="{{ url('assets_user/img/blog/blog-1.jpg') }}" alt="">
-                </div>
+            <article class="blog-details">
 
-                <div class="swiper-slide">
-                  <img src="{{ url('assets_user/img/blog/blog-2.jpg') }}" alt="">
-                </div>
 
-                <div class="swiper-slide">
-                  <img src="{{ url('assets_user/img/blog/blog-3.jpg') }}" alt="">
-                </div>
+              <h2 class="title">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</h2>
 
-                <div class="swiper-slide">
-                  <img src="{{ url('assets_user/img/blog/blog-1.jpg') }}" alt="">
+              <div class="content">
+                <p>
+                  Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
+                  Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.
+                </p>
+
+                <p>
+                  Sit repellat hic cupiditate hic ut nemo. Quis nihil sunt non reiciendis. Sequi in accusamus harum vel aspernatur. Excepturi numquam nihil cumque odio. Et voluptate cupiditate.
+                </p>
+
+                <div class="wp-image">
+                    <img src="{{ url('assets_user/img/struktur.jpeg') }}" />
                 </div>
 
               </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
 
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Informasi Produk</h3>
-              <ul>
-                <li><strong>Pemilik</strong>: Raihan Evanza Simanik</li>
-                <li><strong>Jenis Usaha</strong>: Ayam Geprek</li>
-                <li><strong>Tanggal Pembuatan</strong>: 01 April 2022</li>
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>Deskripsi Produk</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
-            </div>
-          </div>
+            </article>
 
+          </div>
         </div>
 
       </div>
-    </section><!-- End Catalog Details Section -->
+    </section><!-- End Profile Lembaga Section -->
 
   </main><!-- End #main -->
 
- <!-- ======= Footer ======= -->
+  <!-- ======= Footer ======= -->
  @include('template.user.footer')
   <!-- End Footer -->
 
@@ -112,7 +95,7 @@
 
   <div id="preloader"></div>
 
- <!-- Vendor JS Files -->
+  <!-- Vendor JS Files -->
  <script src="{{ url('assets_user/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
   <script src="{{ url('assets_user/vendor/aos/aos.js') }}"></script>
   <script src="{{ url('assets_user/vendor/glightbox/js/glightbox.min.js') }}"></script>

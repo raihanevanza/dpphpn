@@ -38,12 +38,6 @@
   <link href="{{ url('assets_user/css/main.css') }}" rel="stylesheet">
   <link href="{{ url('assets_user/css/main-v2.css') }}" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: HeroBiz - v2.1.0
-  * Template URL: https://bootstrapmade.com/herobiz-bootstrap-business-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body id="home-page">

@@ -34,13 +34,13 @@
   <!-- <link href="assets/css/variables-red.css" rel="stylesheet"> -->
   <!-- <link href="assets/css/variables-pink.css" rel="stylesheet"> -->
 
-   <!-- Template Main CSS File -->
+  <!-- Template Main CSS File -->
   <link href="{{ url('assets_user/css/main.css') }}" rel="stylesheet">
   <link href="{{ url('assets_user/css/main-v2.css') }}" rel="stylesheet">
 
 </head>
 
-<body id="detail-news">
+<body>
 
   <!-- ======= Header ======= -->
  @include('template.user.nav')
@@ -48,7 +48,7 @@
 
   <main id="main">
 
-    <!-- ======= News Details Section ======= -->
+    <!-- ======= Profile Lembaga Section ======= -->
     <section id="blog" class="blog">
       <div class="container" data-aos="fade-up">
 
@@ -59,7 +59,7 @@
             <article class="blog-details">
 
               <div class="post-img">
-                <img src="{{ url('assets_user/img/blog/blog-1.jpg') }}" alt="" class="img-fluid">
+                <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
               </div>
 
               <h2 class="title">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</h2>
@@ -118,7 +118,7 @@
         </div>
 
       </div>
-    </section><!-- End News Details Section -->
+    </section><!-- End Profile Lembaga Section -->
 
   </main><!-- End #main -->
 
