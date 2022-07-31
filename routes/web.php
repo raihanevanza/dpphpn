@@ -9,6 +9,7 @@ use App\Http\Controllers\OrganizationAgendaController;
 use App\Http\Controllers\OrganizationStructureController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\RegionController;
+use App\Http\Controllers\RequestNewsController;
 use App\Http\Controllers\VisionMissionController;
 use App\Http\Controllers\WorkProgramController;
 use Illuminate\Support\Facades\Artisan;
@@ -47,6 +48,7 @@ Route::get('/profile-dpphpn', [PageController::class, 'profile_dpphpn']);
 Route::get('/program-kerja', [PageController::class, 'program_kerja']);
 Route::get('/detail-catalog/{id}', [PageController::class, 'detail_catalog']);
 Route::get('/daftar-dpwdpc', [PageController::class, 'daftar_dpwdpc']);
+Route::post('/send-request', [PageController::class, 'send_request']);
 // ===================== User ===================== //
 
 // ===================== Template ===================== //
@@ -70,5 +72,6 @@ Route::middleware('administrator')->group(function () {
     Route::resource('/master-vision', VisionMissionController::class);
     Route::resource('/master-request', MessageController::class);
     Route::get('/view-request/{id}', [MessageController::class, 'view']);
+    Route::resource('/master-request-news', RequestNewsController::class);
 });
 // ===================== Administrator ===================== //

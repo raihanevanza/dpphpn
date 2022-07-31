@@ -102,4 +102,10 @@ class Page extends Model
         $data = DB::table('regions')->get();
         return $data;
     }
+
+    public static function send_request($data)
+    {
+        $save = DB::table('news_requests')->insert($data);
+        return $save;
+    }
 }

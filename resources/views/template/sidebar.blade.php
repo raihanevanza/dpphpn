@@ -82,10 +82,19 @@ $sidebar = [
         ]
     ],
     [
-        'group' => 'request',
+        'group' => 'message',
+        'title' => 'Pesan',
+        'icon'  => 'envelope',
+        'url'   => url('master-request'),
+        'role'  => [
+            1,
+        ]
+    ],
+    [
+        'group' => 'request-news',
         'title' => 'Request',
         'icon'  => 'edit',
-        'url'   => url('master-request'),
+        'url'   => url('master-request-news'),
         'role'  => [
             1,
         ]

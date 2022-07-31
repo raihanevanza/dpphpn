@@ -32,4 +32,66 @@
 
       <a class="btn-getstarted scrollto modal-active" onClick="modalActive()" href="#about">Request</a>
     </div>
-  </header>
+</header>
+
+<div class="modal-request" id="requestNews">
+    <form action="{{ url('send-request') }}" class="form-request" id="form-request">
+        <div class="header">Request Berita</div>
+        <div class="form-wp">
+            <label for="fname" class="label ">Alamat Email</label>
+            <input type="text" id="fname" name="email" class="input is-invalid">
+            <label for="fname" class="label ">Pilih Kategori</label>
+            <select class="select-wp" id="news" name="category">
+                <option value="" selected>Pilih Kategori Berita</option>
+                <option value="Daerah">Daerah</option>
+                <option value="Nasional">Nasional</option>
+            </select>
+            <button class="btn-submit">Submit</button>
+        </div>
+    </form>
+    <div class="close-button" onClick="modalDeActive()">
+      <span class="close"></span>
+      <span class="close"></span>
+    </div>
+</div>
+
+<script>
+    function modalActive() {
+      var element = document.getElementById("requestNews");
+      element.classList.add("active");
+    }
+
+    function modalDeActive() {
+      var element = document.getElementById("requestNews");
+      element.classList.remove("active");
+    }
+
+    $('#form-request').on('submit', function(e) {
+        e.preventDefault();
+
+        var form = $(this);
+        data = form.serializeArray();
+        data.push({
+            name: '_token',
+            value: "{{ csrf_token() }}"
+        });
+
+        $.ajax({
+            url: $(this).attr('action'),
+            method: "POST",
+            data: data,
+            dataType: "json",
+            success: function(xhr) {
+                alert('Sukses mengirim data!');
+                location.reload();
+            },
+            error: function(err) {
+                if (err.status == 422) {
+                    $.each(err.responseJSON.errors, function(field, messages) {
+                       alert(messages[0]);
+                    });
+                }
+            }
+        });
+    });
+</script>

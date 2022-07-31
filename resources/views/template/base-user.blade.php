@@ -37,7 +37,8 @@
   <!-- Template Main CSS File -->
   <link href="{{ url('assets_user/css/main.css') }}" rel="stylesheet">
   <link href="{{ url('assets_user/css/main-v2.css') }}" rel="stylesheet">
-  
+  <script src="{{ url('assets/vendor/jquery/jquery.min.js') }}"></script>
+
 </head>
 
 <body id="{{ $body_id }}">

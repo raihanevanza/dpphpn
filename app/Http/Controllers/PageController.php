@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\SaveMessage;
+use App\Http\Requests\SaveRequest;
 use App\Models\Page;
 use Illuminate\Http\Request;
 
@@ -145,5 +146,12 @@ class PageController extends Controller
         ];
 
         return view('pages.user.daftar-dpwdpc', $view);
+    }
+
+    public function send_request(SaveRequest $request)
+    {
+        $request->merge(['created_at' => now('UTC')]);
+        $save = Page::send_request($request->except('_token'));
+        return response()->json(['message' => 'success']);
     }
 }
