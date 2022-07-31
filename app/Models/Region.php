@@ -12,7 +12,7 @@ class Region extends Model
     use SoftDeletes;
     protected $table = 'regions';
     protected $fillable = [
-        'type',
+        'name',
         'description',
         'region_file',
         'created_by',

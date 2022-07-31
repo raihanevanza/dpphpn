@@ -17,7 +17,7 @@
                         <thead>
                             <tr>
                                 <th>Foto</th>
-                                <th>Region</th>
+                                <th>Nama</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
@@ -40,8 +40,8 @@
                     name: 'region_image'
                 },
                 {
-                    data: 'type',
-                    name: 'type'
+                    data: 'name',
+                    name: 'name'
                 },
                 {
                     data: 'action',
