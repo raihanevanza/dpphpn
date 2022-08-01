@@ -1,20 +1,20 @@
 @extends('template.base-master')
-@section('title','Profil DPP HPN')
+@section('title','Berita')
 @section('content')
 <!-- Page Heading -->
 
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-    <h1 class="h3 mb-0 text-gray-800">Profil DPP HPN</h1>
+    <h1 class="h3 mb-0 text-gray-800">Berita</h1>
 </div>
 
 <!-- DataTales Example -->
 <div class="card shadow mb-4">
     <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-primary">Form - Profil DPP HPN </h6>
+        <h6 class="m-0 font-weight-bold text-primary">Form - Berita </h6>
     </div>
     <div class="card-body row">
         <div class="col-xl-8 col-lg-7">
-            <form method="POST" class="user" accept-charset="utf-8" enctype="multipart/form-data" action="<?= ($action == 'create') ? url('master-profile') : url('master-profile/'.$data['id']) ?>">
+            <form method="POST" class="user" accept-charset="utf-8" enctype="multipart/form-data" action="<?= ($action == 'create') ? url('master-news') : url('master-news/'.$data['id']) ?>">
                 @if ($action == 'edit')
                 @method('patch')
                 @endif
@@ -89,7 +89,7 @@
                     </span>
                     <span class="text">Simpan</span>
                 </button>
-                <a href="<?php echo url('/master-profile') ?>" class="btn btn-secondary">Kembali</a>
+                <a href="<?php echo url('/master-news') ?>" class="btn btn-secondary">Kembali</a>
             </form>
         </div>
     </div>
