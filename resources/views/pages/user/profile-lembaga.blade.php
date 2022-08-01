@@ -16,52 +16,67 @@
                 <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
               </div>
 
-              <h2 class="title">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</h2>
-
-              <div class="meta-top">
-                <ul>
-                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-details.html">John Doe</a></li>
-                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-details.html"><time datetime="2020-01-01">Jan 1, 2022</time></a></li>
-                </ul>
-              </div><!-- End meta top -->
+              <h2 class="title" style="text-align:center">Sejarah Himpunan Pengusaha Nahdliyin</h2>
 
               <div class="content">
                 <p>
-                  Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
-                  Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.
-                </p>
-
-                <p>
-                  Sit repellat hic cupiditate hic ut nemo. Quis nihil sunt non reiciendis. Sequi in accusamus harum vel aspernatur. Excepturi numquam nihil cumque odio. Et voluptate cupiditate.
+                  Berbicara mengenai Himpunan Pengusaha Nahdliyin yang kita sebut HPN, tentunya mempunyai sejarah tersendiri. Kilas sejarah Himpunan Pengusaha Nahdliyin di pelopori oleh 6 orang Kiai dan 9 orang pengusaha Nahdliyin. 
+                  Pembentukan HPN diresmikan dan fasilisitasi sepenuhnya oleh  Pengurus Besar Nahdlatul Ulama (PBNU), yang berdiri pada 
                 </p>
 
                 <blockquote>
                   <p>
-                    Et vero doloremque tempore voluptatem ratione vel aut. Deleniti sunt animi aut. Aut eos aliquam doloribus minus autem quos.
+                    14 Juli 2011 Masehi atau bertepatan dengan  12 Rajab 1432 Hijriah.
                   </p>
                 </blockquote>
 
                 <p>
-                  Sed quo laboriosam qui architecto. Occaecati repellendus omnis dicta inventore tempore provident voluptas mollitia aliquid. Id repellendus quia. Asperiores nihil magni dicta est suscipit perspiciatis. Voluptate ex rerum assumenda dolores nihil quaerat.
-                  Dolor porro tempora et quibusdam voluptas. Beatae aut at ad qui tempore corrupti velit quisquam rerum. Omnis dolorum exercitationem harum qui qui blanditiis neque.
-                  Iusto autem itaque. Repudiandae hic quae aspernatur ea neque qui. Architecto voluptatem magni. Vel magnam quod et tempora deleniti error rerum nihil tempora.
+                  Terbentuknya HPN beranjak dari perjalanan sejarah berdirinya Nahdlatul Tujjar, suatu lembaga yang berfokus pada membangun pendanaan organisasi NU 
+                  yang berdiri pada tahun 1915 di Surabaya. Forum Nahdlatul Tujjar sendiri memiliki arti kebangkitan saudagar, yang dipimpin oleh H.  Hasan Gipo. Dimana beliau kemudian menjadi ketua pertama PBNU. 
                 </p>
 
-                <h3>Et quae iure vel ut odit alias.</h3>
                 <p>
-                  Officiis animi maxime nulla quo et harum eum quis a. Sit hic in qui quos fugit ut rerum atque. Optio provident dolores atque voluptatem rem excepturi molestiae qui. Voluptatem laborum omnis ullam quibusdam perspiciatis nulla nostrum. Voluptatum est libero eum nesciunt aliquid qui.
-                  Quia et suscipit non sequi. Maxime sed odit. Beatae nesciunt nesciunt accusamus quia aut ratione aspernatur dolor. Sint harum eveniet dicta exercitationem minima. Exercitationem omnis asperiores natus aperiam dolor consequatur id ex sed. Quibusdam rerum dolores sint consequatur quidem ea.
-                  Beatae minima sunt libero soluta sapiente in rem assumenda. Et qui odit voluptatem. Cum quibusdam voluptatem voluptatem accusamus mollitia aut atque aut.
+                  Lalu siapa sosok H. Hasan Gipo yang menjadi ketua Nahdlatul Tujjar pertama?. Nama beliau membumi setelah aksinya menjadi pengusaha sukses yang memiliki 
+                  100 rumah atau took yang disewakan. H. Hasan Gipo ini berdomisili di Surabaya. Seiring dengan berjalannya waktu, para pengusaha hebat dan saudagar  nahdliyin yang juga merangkap menjadi Pengurus Besar Nahdlatul Ulama, mempunyai semangat tinggi dalam membuat wadah yang resmi atas berhimpunnya suatu komunitas pengusaha Nahdliyin. 
+                  Dengan maksud untuk meneruskan semangat juang para saudagar yang telah melahirkan sebuah organisasi bernama Nahdlatul Tujjar.
                 </p>
-                <img src="assets/img/blog/blog-inside-post.jpg" class="img-fluid" alt="">
 
-                <h3>Ut repellat blanditiis est dolore sunt dolorum quae.</h3>
                 <p>
-                  Rerum ea est assumenda pariatur quasi et quam. Facilis nam porro amet nostrum. In assumenda quia quae a id praesentium. Quos deleniti libero sed occaecati aut porro autem. Consectetur sed excepturi sint non placeat quia repellat incidunt labore. Autem facilis hic dolorum dolores vel.
-                  Consectetur quasi id et optio praesentium aut asperiores eaque aut. Explicabo omnis quibusdam esse. Ex libero illum iusto totam et ut aut blanditiis. Veritatis numquam ut illum ut a quam vitae.
+                  Tidak afdhol rasanya jika tidak mengenal pendiri HPN yang berjumlah 15 orang, diantaranya:
                 </p>
+
+                <ol>
+                  <li>KH. Muhammad Ahmad Sahal Mhahfud (alm)</li>
+                  <li>KH, Ahmad Musthofa Bisri</li>
+                  <li>Prof. KH. Said Aqil Siradj</li>
+                  <li>KH. As’ad Said Ali</li>
+                  <li>KH. Agoes Ali Masyhuri</li>
+                  <li>KH. Mustholihin Madjid</li>
+                  <li>Ir. H. Abdul Kholik, MM </li>
+                  <li>GSCB Reza Fahlipi Bakhtiar, Ph.D</li>
+                  <li>Ir. Anang Prabowo</li>
+                  <li>Ir. H. Ahmad Roful Hasbi (alm)</li>
+                  <li>H. Ahmad Hakim Jayli, M.Si</li>
+                  <li>Hj. Siti Rochamayanti, M.M</li>
+                  <li>Erna Cahyawati</li>
+                  <li>Drs. Ja’far Shodiq</li>
+                  <li>Mega Slyvadara.</li>
+                </ol>
+
                 <p>
-                  Alias quia non aliquid. Eos et ea velit. Voluptatem maxime enim omnis ipsa voluptas incidunt. Nulla sit eaque mollitia nisi asperiores est veniam.
+                  Himpunan Pengusaha Nahdliyin tentunya memiliki fungsi yang sangat penting, yaitu ;
+                  <ol type="a">
+                    <li>Wadah berkumpulnya bagi pengusaha mikro, kecil, menengah bahkan besar yang menyetujui asas dan prinsip perjuangan HPN;</li>
+                    <li>Sarana dan prasarana dalam meningkatkan kualitas dan kuantitas usaha serta memperkuat dan memperluas jaringan usaha tiap anggotanya;</li>
+                    <li>Sarana representasi pengusaha Nahdliyin;</li>
+                    <li>Satu kesatuan dalam kelompok yang lebih besar mengenai kepentingan kewirausahaan;</li>
+                    <li>Advokasi terhadap anggota dan pelaku usaha umumnya;</li>
+                    <li>Inkubasi bagi lahirnya pengusaha baru; </li>
+                    <li>Serta menjadi pembinaan khusus bagi pengusaha Nahdliyin dan Indonesia.</li>
+                  </ol>
+                  Adapun tujuan dari HPN itu sendiri adalah terlahirnya pengusaha Nahdliyin yang mempunyai dedikasi tinggi, berkarakter, bermartabat, berdaya cipta dan berdaya saing tinggi, serta beretika bisnis Islami dalam wadah HPN yang profesional, dengan maksud terwujudnya kemakmuran bagi seluruh rakyat atau umat, 
+                  dan meningkatkan Ketahanan Nasional Indonesia ditengah percaturan ekonomi regional dan internasional.
+
                 </p>
 
               </div><!-- End post content -->

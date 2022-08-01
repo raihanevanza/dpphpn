@@ -8,9 +8,9 @@
         <div class="row visi">
             <div class="col-6">
                 <div class="image-left">
-                    <img src="{{ url('assets_user/img/blog/blog-1.jpg') }}" class="image img-1"/>
-                    <img src="{{ url('assets_user/img/blog/blog-2.jpg') }}" class="image img-2"/>
-                    <img src="{{ url('assets_user/img/blog/blog-3.jpg') }}" class="image img-3"/>
+                    <img src="{{ url('assets_user/img/visi-misi/img-1.jpg') }}" class="image img-1"/>
+                    <img src="{{ url('assets_user/img/visi-misi/img-2.jpg') }}" class="image img-2"/>
+                    <img src="{{ url('assets_user/img/visi-misi/img-3.jpg') }}" class="image img-3"/>
                 </div>
             </div>
             <div class="col-6">
@@ -33,9 +33,9 @@
             </div>
             <div class="col-6">
                 <div class="image-right">
-                    <img src="{{ url('assets_user/img/blog/blog-1.jpg') }}" class="image img-1"/>
-                    <img src="{{ url('assets_user/img/blog/blog-2.jpg') }}" class="image img-2"/>
-                    <img src="{{ url('assets_user/img/blog/blog-3.jpg') }}" class="image img-3"/>
+                    <img src="{{ url('assets_user/img/visi-misi/img-4.jpg') }}" class="image img-1"/>
+                    <img src="{{ url('assets_user/img/visi-misi/img-5.jpg') }}" class="image img-2"/>
+                    <img src="{{ url('assets_user/img/visi-misi/img-6.jpg') }}" class="image img-3"/>
                 </div>
             </div>
         </div>
