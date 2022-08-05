@@ -103,14 +103,14 @@ $sidebar = [
 $admin = session()->get('admin');
 $menu['role_id'] = $admin['role_id'];
 ?>
-<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+<ul class="navbar-nav sidebar sidebar-dark accordion" style="background-color:#116d38" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
         <div class="sidebar-brand-icon rotate-n-15">
-            <i class="fas fa-laugh-wink"></i>
+            <img src="{{ url('assets_user/img/logo-white.png') }}" alt="" style="height: 25px">
         </div>
-        <div class="sidebar-brand-text mx-3">Batikun</div>
+        <div class="sidebar-brand-text mx-3">DPP HPN</div>
     </a>
 
     <!-- Divider -->

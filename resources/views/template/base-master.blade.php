@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Batikun - @yield('title')</title>
+    <title>DPP HPN - @yield('title')</title>
 
     <!-- Custom fonts for this template-->
     <link href="{{ url('assets/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">

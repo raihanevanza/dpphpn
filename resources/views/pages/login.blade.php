@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Batikun - Login</title>
+    <title>DPP HPN - Login</title>
 
     <!-- Custom fonts for this template-->
     <link href="{{ url('assets/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
@@ -22,7 +22,7 @@
 
 </head>
 
-<body class="bg-gradient-primary">
+<body style="background-color:#116d38">
 
     <div class="container">
 
@@ -59,7 +59,7 @@
                                             <input name="password" type="password" class="form-control form-control-user"
                                                 id="exampleInputPassword" placeholder="Password">
                                         </div>
-                                        <button href="index.html" class="btn btn-primary btn-user btn-block">
+                                        <button href="index.html" class="btn btn-user btn-block" style="background-color: #116d38; color: #fff">
                                             Login
                                         </button>
                                     </form>

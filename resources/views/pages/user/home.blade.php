@@ -2,32 +2,32 @@
 @section('section')
 <section id="hero" class="hero carousel  carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
     <?php
-      $arr = array (
-          '1' => array(
-              'active' => 'active',
-              'image' => 'blog-1.jpg',
-              'title' 	=> 'Selamat Datang di HPN',
-              'subtitle'	=> 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-          ),
-          '2' => array(
-            'active' => '',
-            'image' => 'blog-2.jpg',
-            'title' 	=> 'Selamat Datang di HPN',
-            'subtitle'	=> 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-          ),
-          '3' => array(
-            'active' => '',
-            'image' => 'blog-3.jpg',
-            'title' 	=> 'Selamat Datang di HPN',
-            'subtitle'	=> 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-          ),
-      );
-          foreach ($arr as $key => $value) {
-  ?>
+        $arr = array (
+            '1' => array(
+                'active' => 'active',
+                'image' => 'header-1.jpg',
+                'title' 	=> '',
+                'subtitle'	=> '',
+            ),
+            '2' => array(
+              'active' => '',
+              'image' => 'header-2.jpg',
+              'title' 	=> '',
+              'subtitle'	=> '',
+            ),
+            '3' => array(
+              'active' => '',
+              'image' => 'header-3.jpg',
+              'title' 	=> '',
+              'subtitle'	=> '',
+            ),
+        );
+            foreach ($arr as $key => $value) {
+    ?>
   <div class="carousel-item <?= $value['active'] ?> slider-wp">
     <div class="container">
           <div class="content-wp">
-              <img src="{{ url('assets_user/img/blog/'.$value['image']) }}" alt="" class="img-fluid img">
+              <img src="{{ url('assets_user/img/'.$value['image']) }}" alt="" class="img-fluid img">
               <div class="col-lg-9 text-center">
                   <div class="title-carousel"><?= $value['title'] ?></div>
                   <div class="subtitle-carousel"><?= $value['subtitle'] ?></div>
@@ -93,8 +93,8 @@
     </div>
 
     <div class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126886.57493010073!2d106.86558280358355!3d-6.367450381450746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698e62ce4d3747%3A0xe67e4b652488ae9!2sHPN%20Himpunan%20Pengusaha%20Nahdliyin!5e0!3m2!1sid!2sid!4v1657644053162!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div><!-- End Google Maps -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.630235096948!2d106.87216201485428!3d-6.18022199552573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f4fcfa00ea9d%3A0xc85479f3993e7232!2sJl.%20Cempaka%20Putih%20Timur%20XXIV%2C%20RT.15%2FRW.3%2C%20Cemp.%20Putih%20Tim.%2C%20Kec.%20Cemp.%20Putih%2C%20Kota%20Jakarta%20Pusat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sid!2sid!4v1659704010866!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div><!-- End Google Maps -->
 
     <div class="container">
 
@@ -110,7 +110,7 @@
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
                 <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>Jln. Cempaka Putih Timur XXIV Np.46, Jakarta Pusat, <br>DKI Jakarta 10510</p>
                 </div>
             </div><!-- End Info Item -->
 

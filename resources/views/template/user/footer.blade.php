@@ -4,36 +4,41 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-4 col-md-6">
             <div class="footer-info">
                 <img src="{{ url('assets_user/img/logo-white.png') }}" alt="" class="logo-footer">
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Berita</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Program Kerja</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Katalog</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Menu</h4>
+            <div class="row">
+              <div class="col-5">
+                <div class="footer-menu"><a href="{{ url('template/index') }}">Home</a></div>
+                <div class="footer-menu accordion">Berita <i class="bi bi-chevron-right"></i></div>
+                <div class="panel">
+                  <div class="footer-menu sub-menu"><a href="{{ url('template/news') }}">Daerah</a></div>
+                  <div class="footer-menu sub-menu"><a href="{{ url('template/news') }}">Nasional</a></div>
+                  <div class="footer-menu sub-menu"><a href="{{ url('template/news') }}">Trending</a></div>
+                </div>
+                <div class="footer-menu accordion">Profile <i class="bi bi-chevron-right"></i></div>
+                <div class="panel">
+                  <div class="footer-menu sub-menu"><a href="{{ url('template/profile-lembaga') }}">Profile Lembaga</a></div>
+                  <div class="footer-menu sub-menu"><a href="{{ url('template/struktur-organisasi') }}">Struktur Organisasi</a></div>
+                  <div class="footer-menu sub-menu"><a href="{{ url('template/profile') }}">Profile DPP HPN</a></div>
+                  <div class="footer-menu sub-menu"><a href="{{ url('template/daftar-dpw-hpc') }}">Daftar DPW & DPC</a></div>
+                </div>
+              </div>
+              <div class="col-5">
+                <div class="footer-menu"><a href="{{ url('template/program-kerja') }}">Program Kerja</a></div>
+                <div class="footer-menu"><a href="{{ url('template/catalog') }}">Katalog</a></div>
+              </div>
+            </div>
           </div>
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <h4>Alamat</h4>
+            <p>Jln. Cempaka Putih Timur XXIV Np.46, Jakarta Pusat, <br>DKI Jakarta 10510</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
@@ -65,3 +70,20 @@
     </div>
 
   </footer>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
