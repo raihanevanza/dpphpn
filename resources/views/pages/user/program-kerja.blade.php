@@ -54,7 +54,7 @@
         <div class="agenda-organisasi">
         <div class="section-title">
           <div class="title">Agenda Organisasi</div>
-          <div class="subtitle">Lorem ipsum dolor sit amet</div>
+          <!--<div class="subtitle">Lorem ipsum dolor sit amet</div>-->
         </div>
           <div class="row section-agenda">
               @foreach ($data['agenda'] as $item)
