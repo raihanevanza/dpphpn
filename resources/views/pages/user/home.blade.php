@@ -87,7 +87,7 @@
 
         <div class="section-title">
         <div class="title">Kontak Kami</div>
-        <div class="subtitle">Lorem ipsum dolor sit amet</div>
+        <!--<div class="subtitle">Lorem ipsum dolor sit amet</div>-->
         </div>
 
     </div>
@@ -104,7 +104,7 @@
 
             <div class="info">
             <h3>Get in touch</h3>
-            <p>Et id eius voluptates atque nihil voluptatem enim in tempore minima sit ad mollitia commodi minus.</p>
+            <!--<p>Et id eius voluptates atque nihil voluptatem enim in tempore minima sit ad mollitia commodi minus.</p>-->
 
             <div class="info-item d-flex">
                 <i class="bi bi-geo-alt flex-shrink-0"></i>

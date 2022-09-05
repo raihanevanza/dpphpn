@@ -99,7 +99,7 @@ class Page extends Model
 
     public static function get_daftar_dpwdpc()
     {
-        $data = DB::table('regions')->get();
+        $data = DB::table('regions')->where(['deleted_at' => null])->get();
         return $data;
     }
 

@@ -22,7 +22,7 @@
          <div class="container">
              <div class="section-title">
                  <div class="title">NEWS</div>
-                 <div class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+                 <!--<div class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>-->
              </div>
          </div>
          <div class="container" data-aos="fade-up">
@@ -50,7 +50,7 @@
                                     <span class="post-date">{{ date('l, d M Y', strtotime($items->created_at)) }}</span>
                                 </div>
                                 <h3 class="post-title">{{ $items->title }}</h3>
-                                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                                <a href="{{ url('detail-news/'.$items->id) }}" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
                             </div>
                         </div>
                         @endforeach
